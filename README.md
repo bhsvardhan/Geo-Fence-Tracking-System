@@ -1,26 +1,26 @@
-# 🚀 **RFID-Based Tracking System**  
+# **RFID-Based Tracking System**  
 
 This project integrates **Firebase**, **Blynk**, and **React-based Visualization** to provide a **real-time tracking and monitoring system** for RFID-based entries and exits.  
 
 ---
 
-## 📌 **Project Overview**  
+## **Project Overview**  
 This system **tracks RFID-tagged individuals or assets** and stores the logs in **Firebase Realtime Database**. The data is then processed for visualization and analysis through an interactive **React dashboard** with charts and maps. Additionally, **Blynk** is used for **remote monitoring and control**.
 
 ---
 
-## 🛠️ **Technologies Used**  
+## **Technologies Used**  
 
-### 1️⃣ **Hardware & IoT**  
+### **Hardware & IoT**  
 - **RFID Module** (e.g., RC522)  
 - **ESP8266 / ESP32 / Arduino** for data transmission  
 - **Blynk** for IoT remote monitoring  
 
-### 2️⃣ **Backend & Database**  
+### **Backend & Database**  
 - **Firebase Realtime Database** (for storing RFID logs)  
 - **Node.js** (for API and backend logic)  
 
-### 3️⃣ **Frontend & Visualization**  
+### **Frontend & Visualization**  
 - **React.js** (for the dashboard)  
 - **Recharts** (for graphical representation)  
 - **Leaflet.js** (for mapping RFID locations)  
@@ -29,24 +29,25 @@ This system **tracks RFID-tagged individuals or assets** and stores the logs in 
 
 ## 📂 **Project Structure**  
 ```
-/src
- ├── /Hardware           # RFID reader & ESP8266 code
- │   ├── rfid_reader.ino # Arduino code for RFID reading
- │   ├── blynk_control.ino # IoT monitoring using Blynk
- ├── /Backend            # Node.js server (if applicable)
- │   ├── server.js       # Handles API requests
- ├── /Visualization      # React dashboard for visualization
- │   ├── App.js          # Main container for dashboard
- │   ├── Visualization.jsx # Processes and displays data
+/src    
+ ├── /Visualization    
+ │   ├── App.js          
+ │   ├── Visualization.jsx 
  ├── /Firebase
- │   ├── firebaseConfig.js # Firebase configuration
- ├── index.js            # React entry point
- ├── package.json        # Project dependencies
+ │   ├── App.js 
+ │   ├── firebaseConfig.js 
+ │   ├── RFIDLogs.jsx 
+ │   ├── RFIDLogs.css
+`├── /Blynk
+ │   ├── BlynkApp.js 
+ │   ├── BlynkApp.css           
+ ├── App.js
+ ├── App.css
 ```
 
 ---
 
-## 🔧 **Setup & Installation**  
+##  **Setup & Installation**  
 
 ### 🔹 **1. Clone the Repository**  
 ```sh
@@ -82,38 +83,33 @@ Open `http://localhost:3000` in your browser.
 
 ---
 
-## 📊 **Dashboard Features**  
+##  **Dashboard Features**  
 
-### ✅ **Day-wise & User-wise Entry/Exit Count**  
+###  **Day-wise & User-wise Entry/Exit Count**  
 - **Bar charts** for tracking RFID-based entries/exits  
 - **Filtering options** for better insights  
 
-### ✅ **Real-Time Hourly Entry/Exit Trends**  
+###  **Real-Time Hourly Entry/Exit Trends**  
 - **Time-based groupings** (e.g., 4-hour intervals)  
 - **Predicts peak entry/exit times**  
 
-### ✅ **Geospatial Mapping (Leaflet.js)**  
+###  **Geospatial Mapping (Leaflet.js)**  
 - **Interactive map** showing real-time locations  
 - **RFID-based entry/exit points plotted**  
 
-### ✅ **IoT Remote Monitoring (Blynk)**  
+###  **IoT Remote Monitoring (Blynk)**  
 - **RFID logs displayed in Blynk app**  
 - **Notifications for specific events**  
 - **Remote control features (if applicable)**  
 
 ---
 
-## 🔄 **Future Enhancements**  
+##  **Future Enhancements**  
 - **Role-based access control (RBAC)**  
 - **Real-time notifications via Firebase Cloud Messaging (FCM)**  
 - **Improved analytics & predictive modeling**  
 
 ---
 
-## 🤝 **Contributing**  
+##  **Contributing**  
 Contributions are welcome! Fork the repo, make changes, and submit a **pull request**.  
-
----
-
-## 📜 **License**  
-This project is licensed under the **MIT License**.
