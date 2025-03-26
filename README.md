@@ -13,7 +13,7 @@ This system **tracks RFID-tagged individuals or assets** and stores the logs in 
 
 ### **Hardware & IoT**  
 - **RFID Module** (e.g., RC522)  
-- **ESP8266 / ESP32 / Arduino** for data transmission  
+- **ESP8266** for data transmission  
 - **Blynk** for IoT remote monitoring  
 
 ### **Backend & Database**  
